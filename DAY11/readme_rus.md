@@ -1,5 +1,3 @@
-## 
-
 ## Задание 00 — Классическое DWH
 
 | Задание 00: Классическое DWH |                   |
@@ -184,10 +182,6 @@ insert into currency values (100, 'EUR', 0.79, '2022-01-08 13:29');
 | lastname         | источник: user.lastname; если NULL → `not defined`                  |
 | currency_name    | источник: currency.name                                             |
 | currency_in_usd  | источники: currency.rate_to_usd, currency.updated, balance.updated. |
-
-Графическая интерпретация формулы:  
-
-![T01_06](misc/images/T01_06.png)
 
 - Найдите ближайший `rate_to_usd` валюты в прошлом (t1).  
 - Если t1 пуст — найдите ближайший `rate_to_usd` в будущем (t2).  
